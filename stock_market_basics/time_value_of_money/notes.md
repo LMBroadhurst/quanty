@@ -29,4 +29,12 @@ For example working out the PV required to reach a given FV, assuming a specific
 This is the discrete model. To work on the continuous model then we need to use differential equations.
 
 x(t) - x amount of money at time t
-x(t + d_T) - x(t)
+x(t + d_T) - x(t) = d_x(t) / d_t * dt
+=>
+x(t + d_T) - x(t) = r x(t) dt
+=>
+dx(t) / dt = r x(t)
+=> FV = PV * e^(r*t)
+
+## Time value of money
+Most important concept is that the time value of money today x(t) is worth more that x(t) in a years time.
